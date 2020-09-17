@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.motion.widget.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E6E1E1"
+    app:layoutDescription="@xml/activity_detail_scene"
+    tools:context=".view.DetailActivity" >
+
+    <ImageView
+        android:id="@+id/ivLeagueImage"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:scaleType="centerCrop"
+        android:visibility="invisible"
+        tools:srcCompat="@tools:sample/backgrounds/scenic" />
+
+    <ImageView
+        android:id="@+id/ivLeagueIcon"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/bg_oval"/>
+
+    <TextView
+        android:id="@+id/tvLeagueName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="Shopee Liga 1"
+        style="@style/Heading"
+        />
+
+    <TextView
+        android:id="@+id/tvLeagueDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="Lorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit amet"
+        android:fontFamily="@font/lato"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        tools:listitem="@layout/item_team"
+        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+        app:spanCount="3"
+        tools:itemCount="16"/>
+
+    <TextView
+        android:id="@+id/tvParticipant"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Participant"
+        style="@style/Heading"/>
+
+
+</androidx.constraintlayout.motion.widget.MotionLayout>

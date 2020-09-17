@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:motion="http://schemas.android.com/apk/res-auto">
+
+    <Transition
+        motion:constraintSetEnd="@+id/end"
+        motion:constraintSetStart="@id/start"
+        motion:duration="2000">
+       <KeyFrameSet>
+       </KeyFrameSet>
+        <OnSwipe
+            motion:dragDirection="dragUp"
+            motion:touchAnchorId="@id/recyclerView"
+            motion:touchAnchorSide="top"
+            />
+    </Transition>
+
+    <ConstraintSet android:id="@+id/start">
+        <Constraint
+            android:layout_height="200dp"
+            motion:layout_constraintTop_toTopOf="parent"
+            android:layout_width="wrap_content"
+            android:id="@+id/ivLeagueImage"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintEnd_toEndOf="parent" />
+        <Constraint
+            android:layout_height="100dp"
+            android:layout_width="100dp"
+            motion:layout_constraintTop_toBottomOf="@+id/ivLeagueImage"
+            android:id="@+id/ivLeagueIcon"
+            motion:layout_constraintBottom_toBottomOf="@+id/ivLeagueImage"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintStart_toStartOf="parent" />
+        <Constraint
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            motion:layout_constraintTop_toBottomOf="@+id/ivLeagueIcon"
+            android:id="@+id/tvLeagueName"
+            motion:layout_constraintStart_toStartOf="@+id/ivLeagueIcon"
+            motion:layout_constraintEnd_toEndOf="@+id/ivLeagueIcon"
+            android:layout_marginTop="8dp" />
+        <Constraint
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            motion:layout_constraintStart_toStartOf="parent"
+            android:id="@+id/tvTeamDesc"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintTop_toBottomOf="@+id/tvLeagueName"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginEnd="16dp" />
+        <Constraint
+            android:layout_height="200dp"
+            motion:layout_constraintTop_toTopOf="parent"
+            android:layout_width="wrap_content"
+            android:id="@+id/ivLeagueImage"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintEnd_toEndOf="parent" />
+        <Constraint
+            android:layout_height="100dp"
+            android:layout_width="100dp"
+            motion:layout_constraintTop_toBottomOf="@+id/ivLeagueImage"
+            android:id="@+id/ivLeagueIcon"
+            motion:layout_constraintBottom_toBottomOf="@+id/ivLeagueImage"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintStart_toStartOf="parent" />
+        <Constraint
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            motion:layout_constraintTop_toBottomOf="@+id/ivLeagueIcon"
+            android:id="@+id/tvLeagueName"
+            motion:layout_constraintEnd_toEndOf="@+id/ivLeagueIcon"
+            motion:layout_constraintStart_toStartOf="@+id/ivLeagueIcon"
+            android:layout_marginTop="8dp" />
+        <Constraint
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            motion:layout_constraintTop_toBottomOf="@+id/tvLeagueName"
+            android:id="@+id/tvLeagueDesc"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginEnd="16dp" />
+        <Constraint
+            android:layout_height="0dp"
+            android:layout_width="0dp"
+            motion:layout_constraintTop_toBottomOf="@+id/tvParticipant"
+            android:id="@+id/recyclerView"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginEnd="16dp"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginTop="8dp" />
+        <Constraint
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            motion:layout_constraintTop_toBottomOf="@+id/tvLeagueDesc"
+            android:id="@+id/tvParticipant"
+            motion:layout_constraintStart_toStartOf="@+id/tvLeagueDesc"
+            android:layout_marginTop="16dp" />
+    </ConstraintSet>
+
+    <ConstraintSet android:id="@+id/end">
+        <Constraint
+            android:layout_height="10dp"
+            motion:layout_constraintTop_toTopOf="parent"
+            android:layout_width="0dp"
+            android:id="@+id/ivLeagueImage"
+            android:visibility="invisible"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintEnd_toEndOf="parent" />
+        <Constraint
+            android:layout_height="60dp"
+            android:layout_width="60dp"
+            motion:layout_constraintStart_toStartOf="parent"
+            android:id="@+id/ivLeagueIcon"
+            motion:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp" />
+        <Constraint
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            motion:layout_constraintTop_toBottomOf="@+id/ivLeagueIcon"
+            android:id="@+id/tvLeagueName"
+            motion:layout_constraintStart_toStartOf="@+id/ivLeagueIcon"
+            android:layout_marginTop="8dp" />
+        <Constraint
+            android:layout_height="16dp"
+            android:layout_width="0dp"
+            motion:layout_constraintTop_toBottomOf="@+id/tvLeagueName"
+            android:id="@+id/tvLeagueDesc"
+            motion:layout_constraintStart_toStartOf="@+id/tvLeagueName"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="16dp"
+            />
+        <Constraint
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            motion:layout_constraintTop_toBottomOf="@+id/tvLeagueDesc"
+            android:id="@+id/tvParticipant"
+            motion:layout_constraintStart_toStartOf="@+id/tvLeagueDesc"
+            android:layout_marginTop="16dp" />
+        <Constraint
+            android:layout_height="0dp"
+            android:layout_width="0dp"
+            motion:layout_constraintTop_toBottomOf="@+id/tvParticipant"
+            android:id="@+id/recyclerView"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="8dp"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="16dp" />
+    </ConstraintSet>
+</MotionScene>

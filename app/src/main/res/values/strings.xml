@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Football App</string>
+    <string name="header_title_main">Choose Your league</string>
+    <string name="more_btn">More</string>
+
+    <string name="zone_desc">this league is in %1$s ZONE</string>
+
+
+    <string name="euroDesc">The European Football Union or the Union of European Football Associations (UEFA) is the administrative and controlling body for european football associations. The federation consists of 55 member associations, each responsible for regulating football in their respective countries</string>
+    <string name="conmebolDesc">The South American Football Confederation (CONMEBOL)is the administrative and controlling body for football associations in most parts of South America. The federation consists of 10 members of the association, each of which is responsible for regulating football in their respective countries.it covers all countries and territories in South America, with the exception of Guyana,French Guiana, Suriname, whichis part of CONCACAF,and the British and Argentine territories of the Falkland Islands, whichare not members of any confederation.</string>
+    <string name="afcDesc">The Asian Football Confederation (AFC) covers all Asian countries except Armenia, Azerbaijan, Cyprus, Georgia, Israel, Kazakhstan and Turkey as members, but also includes Oceania countries such as Australia, Guam and the Northern Mariana Islands (the NorthernMariana Islands association is a member of the AFC\'s interim association but not a fifa member).</string>
+    <string name="info">made by @persadaditya - illustrate asset by vectors market</string>
+    <string name="team_name">team-name</string>
+    <string name="image_zone">image zone</string>
+    <string-array name="description_zone">
+        <item>@string/euroDesc</item>
+        <item>@string/conmebolDesc</item>
+        <item>@string/afcDesc</item>
+    </string-array>
+</resources>
